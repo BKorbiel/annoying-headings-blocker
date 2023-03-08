@@ -1,2 +1,2 @@
 # annoying-headings-blocker
-Project is in deployment.
+Work on this project is ongoing
