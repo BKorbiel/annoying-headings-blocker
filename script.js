@@ -1,7 +1,6 @@
-var KEY_WORDS = ["Morawiecki", "Andrzej Duda", "PIS", "KO", "koalicja", "lewica", "prawica"];
+var KEY_WORDS = [];
 
 function getHeadings (element) {
-    
     if (element instanceof Element || element instanceof HTMLDocument) {
         var headings = element.querySelectorAll('h1, h2, h3, h4, h5, a');
         for (var j = 0; j < headings.length; j++) {
@@ -25,7 +24,14 @@ function blockHeading (element) {
     }
 }
 
-getHeadings(document);
+//get keywords from storage
+chrome.storage.sync.get({
+    keywords: []
+    }, function(storage) {
+    KEY_WORDS = storage.keywords;
+    getHeadings(document);
+});
+
 
 document.addEventListener("DOMNodeInserted", function(e) {
     getHeadings(e.target);

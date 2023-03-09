@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Annoying Headings Blocker options</title></head>
+  <link rel="stylesheet" href="options.css">
+<body>
+  <h1>Your keywords</h1>
+  <div class="keywords-holder">
+    <div class="keyword-row">
+      <div class="input-keyword">
+        <label>Add new keyword: </label><br/>
+        <input id="new-keyword" type="text" value="" placeholder="New keyword..."/>
+        <button class="add-keyword">Add</button>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    *The script also hides the headings that contain words whose subwords are in the keyword list.<br/>
+    For example, if the word "egg" is in the keyword list, then headings that contain the word "eggs" will also be hidden.
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
