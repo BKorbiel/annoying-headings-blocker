@@ -1,7 +1,7 @@
 {
-    "name": "Annoying headers blocker",
+    "name": "Annoying headings blocker",
     "version": "1.0.0",
-    "description": "This is an extension that blocks annoying headers",
+    "description": "This is an extension that blocks annoying headings",
     "manifest_version": 3,
     "host_permissions": ["<all_urls>"],
     "permissions": ["scripting", "storage"],
