@@ -11,3 +11,6 @@ It can be useful if you're tired of reading headlines on a particular topic, or 
 - In the "Extensions" tab, find "Annoying heading blocker" and click "options"
 - Enter keywords and choose whether it's case-sensitive
 - Enjoy not reading annoying headings
+
+## Example of how it works
+![Example-shrek](example.png)
